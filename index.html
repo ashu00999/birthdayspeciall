@@ -1,0 +1,763 @@
+
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff4f2">
+<title>For Mehak ❤️ — 31 October</title>
+
+<style>
+:root{--pink:#ff7ca8;--rose:#ff477e;--cream:#fff1f5;--night:#130b1d;--gold:#ffdca0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--cream);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(ellipse at 50% 0%,#4b173b 0,#1b1027 42%,#090710 100%);overflow-x:hidden}
+button{font:inherit;cursor:pointer}
+.stars,.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:.6;animation:twinkle 3s infinite alternate}
+.heart{position:absolute;bottom:-50px;animation:floatUp linear forwards;opacity:.8;filter:drop-shadow(0 0 7px #ff4f8b)}
+@keyframes twinkle{to{opacity:.15;transform:scale(.5)}}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+main{position:relative;z-index:1}
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:35px 18px 60px;position:relative}
+.eyebrow{letter-spacing:4px;text-transform:uppercase;font:12px Arial,sans-serif;color:#ffd2df}
+.hero h1{font-size:clamp(3rem,12vw,7.2rem);line-height:.95;margin:18px 0;color:#fff0f5;text-shadow:0 0 15px #ff6098,0 0 50px #a72c72;animation:glow 3s ease-in-out infinite alternate}
+.hero h1 span{display:block;color:var(--pink);font-size:.48em;letter-spacing:7px;margin-top:20px}
+@keyframes glow{to{text-shadow:0 0 25px #ff6098,0 0 75px #a72c72}}
+.subtitle{max-width:650px;line-height:1.8;color:#f9d9e5;font-size:1.05rem}
+.pill{border:1px solid #ff9bbd;background:#ffffff0d;color:#fff;border-radius:999px;padding:13px 22px;margin:9px;backdrop-filter:blur(8px);transition:.25s}
+.pill:hover{background:#ff4f8b35;transform:translateY(-2px)}
+.hint{font:12px Arial,sans-serif;color:#d7b4c6;margin-top:12px}
+.section{width:min(900px,92%);margin:0 auto 70px;text-align:center}
+.section h2{font-size:clamp(1.8rem,6vw,3rem);color:#ffc1d4;margin-bottom:12px}
+.section .intro{color:#e8c9d7;line-height:1.7}
+
+.gift-wrap{display:flex;justify-content:center;padding:24px;overflow:visible}
+.gift{position:relative;width:145px;height:125px;border:0;background:transparent;filter:drop-shadow(0 12px 20px #0008);transition:.5s;overflow:visible}
+.gift .box{position:absolute;bottom:0;left:12px;width:120px;height:78px;background:linear-gradient(120deg,#ff6d9e,#b51e61);border-radius:7px}
+.gift .lid{position:absolute;left:4px;top:24px;width:136px;height:26px;background:#ffb4cb;border-radius:5px;transform-origin:12% 100%;transition:.7s}
+.gift .ribbon{position:absolute;left:62px;bottom:0;width:19px;height:78px;background:#ffe0a0}
+.gift .bow{position:absolute;left:55px;top:3px;font-size:42px;color:#ffe0a0}
+.gift.open .lid{transform:translate(-30px,-48px) rotate(-28deg)}
+.gift.open{transform:translateY(-8px)}
+.gift-message{min-height:42px;color:#ffe1ea;line-height:1.7}
+
+/* Teddy coming out of the gift box */
+.gift-teddy{
+  position:absolute;
+  z-index:5;
+  left:42px;
+  bottom:28px;
+  font-size:62px;
+  line-height:1;
+  opacity:0;
+  transform:translateY(45px) scale(.35);
+  pointer-events:none;
+  filter:drop-shadow(0 5px 5px #75455430);
+}
+
+.teddy-rose{
+  position:absolute;
+  font-size:25px;
+  top:5px;
+  right:-9px;
+  transform:rotate(20deg);
+}
+
+.gift.open .gift-teddy{
+  animation:teddyPop 1.1s cubic-bezier(.2,.8,.3,1.3) forwards;
+}
+
+@keyframes teddyPop{
+  0%{
+    opacity:0;
+    transform:translateY(45px) scale(.35);
+  }
+  65%{
+    opacity:1;
+    transform:translateY(-48px) scale(1.12);
+  }
+  82%{
+    transform:translateY(-40px) scale(.95);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(-43px) scale(1);
+  }
+}
+
+.cartoon{
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  gap:24px;
+  margin:30px auto 10px;
+  min-height:195px;
+}
+
+.person-wrap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  animation:bob 2.4s ease-in-out infinite;
+}
+
+.person-wrap:last-child{
+  animation-delay:.5s;
+}
+
+.person{
+  position:relative;
+  width:90px;
+  height:155px;
+  animation:none;
+}
+
+@keyframes bob{
+  50%{transform:translateY(-7px)}
+}
+
+.head{position:absolute;top:4px;left:20px;width:52px;height:56px;border-radius:48% 48% 45% 45%;background:#f2c19f;border:2px solid #4a2633}
+.hair{position:absolute;top:0;left:18px;width:56px;height:29px;border-radius:55% 55% 20% 20%;background:#291523;z-index:2}
+.hair.girl{background:#261326;border-radius:60% 60% 25% 20%;height:37px}
+.eye{position:absolute;top:28px;width:4px;height:5px;border-radius:50%;background:#351725;z-index:3}
+.eye.one{left:34px}.eye.two{left:53px}
+.smile{position:absolute;top:41px;left:38px;width:15px;height:7px;border-bottom:2px solid #9b3654;border-radius:50%;z-index:3}
+.body{position:absolute;top:59px;left:12px;width:68px;height:62px;border-radius:20px 20px 8px 8px;background:#e34b83;border:2px solid #4a2633}
+.body.blue{background:#6488c9}
+.arm{position:absolute;top:68px;left:5px;width:15px;height:52px;background:#f2c19f;border:2px solid #4a2633;border-radius:12px;transform:rotate(-25deg)}
+.arm.right{left:69px;transform:rotate(25deg)}
+.legs{position:absolute;top:116px;left:26px;width:15px;height:34px;background:#3a243a;border-radius:8px}
+.legs.r{left:51px}
+
+.person-label{
+  margin-top:5px;
+  color:#93445f;
+  font-size:16px;
+  font-weight:bold;
+  letter-spacing:1px;
+  text-align:center;
+}
+
+.heart-between{
+  align-self:center;
+  margin-bottom:30px;
+  font-size:35px;
+  animation:beat 1s infinite;
+  filter:drop-shadow(0 0 10px #ff639a)
+}
+
+@keyframes beat{50%{transform:scale(1.3)}}
+
+.letter-card{background:linear-gradient(145deg,#fff6f8f2,#ffe5edee);color:#51233a;text-align:left;border-radius:20px;padding:clamp(20px,5vw,42px);box-shadow:0 20px 70px #0006;border:1px solid #ffc5d8;line-height:1.9;display:none;white-space:normal}
+.letter-card.show{display:block;animation:appear .7s ease}
+.letter-card p{margin:0 0 18px}
+.letter-card strong{color:#b51e61}
+.letter-card .signature{text-align:right;font-style:italic;color:#9e245b;font-size:1.1rem}
+@keyframes appear{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.envelope{width:min(330px,90%);height:190px;margin:28px auto;position:relative;border:0;background:transparent;display:block}
+.env-back{position:absolute;inset:25px 0 0;background:#f5b3ca;border-radius:8px;box-shadow:0 12px 30px #0005}
+.env-flap{position:absolute;top:25px;left:0;width:100%;height:110px;background:#ff8fb2;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:.6s;z-index:2}
+.env-front{position:absolute;bottom:0;left:0;width:100%;height:140px;background:#ffd5e2;clip-path:polygon(0 0,50% 55%,100% 0,100% 100%,0 100%);z-index:3}
+.seal{position:absolute;z-index:4;left:calc(50% - 22px);top:87px;width:44px;height:44px;border-radius:50%;background:#c62965;color:#fff;display:grid;place-items:center;font-size:23px;box-shadow:0 2px 8px #9e245b66}
+.envelope.open .env-flap{transform:rotateX(180deg);z-index:0}
+.envelope.open .seal{opacity:0}
+.cake{font-size:70px;display:inline-block;animation:cakeBob 2s infinite}
+@keyframes cakeBob{50%{transform:translateY(-8px) rotate(2deg)}}
+.candle{font-size:30px;display:inline-block;animation:flame .8s infinite alternate}
+@keyframes flame{to{transform:scale(1.12);filter:brightness(1.4)}}
+.surprise{display:none;max-width:720px;margin:20px auto;background:#ffffff0b;border:1px solid #ff93b4;border-radius:20px;padding:28px;line-height:1.9;color:#ffe2eb;box-shadow:0 0 45px #ff4f8b20}
+.surprise.show{display:block;animation:appear .8s}
+.surprise .big{font-size:clamp(1.5rem,5vw,2.5rem);color:#ffb6cf}
+.footer{text-align:center;padding:25px;color:#c7a7b8;font:12px Arial,sans-serif}
+.musicbar{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);z-index:10;display:flex;align-items:center;gap:10px;background:#160d20e8;border:1px solid #ff8caf88;border-radius:999px;padding:8px 14px;box-shadow:0 5px 25px #0006;backdrop-filter:blur(12px);width:max-content;max-width:94vw}
+.musicbar button{border:0;background:#ff6b9d;color:#2b0d1d;border-radius:50%;width:37px;height:37px;font-size:16px}
+.musicbar span{font:12px Arial,sans-serif;color:#ffe5ed}
+.progress{width:65px;height:3px;background:#704058;border-radius:5px;overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:#ff9fbe}
+
+@media(max-width:500px){
+.musicbar span{max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.progress{width:32px}
+.cartoon{gap:12px}
+.person-label{font-size:14px}
+.section{margin-bottom:55px}
+.letter-card{font-size:15px}
+}
+
+/* Soft daylight redesign */
+:root{--pink:#d96b91;--rose:#c94f79;--cream:#513b43;--night:#fff8f5;--gold:#c99a59}
+body{color:#543d45;background:radial-gradient(ellipse at 14% 5%,rgba(255,255,255,.98) 0,rgba(255,246,242,.9) 30%,transparent 58%),radial-gradient(ellipse at 88% 18%,#ffe1e8 0,transparent 38%),linear-gradient(155deg,#fffaf5 0%,#fff0f2 48%,#f9e8e8 100%);background-attachment:fixed}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.22;background-image:radial-gradient(#c49b91 .65px,transparent .65px);background-size:17px 17px;mask-image:linear-gradient(to bottom,black,transparent 80%)}
+.stars{opacity:.25}.star{background:#c58c9d;box-shadow:0 0 4px #e8b9c7}
+.heart{filter:drop-shadow(0 2px 3px #c45b7a22);opacity:.45}
+.hero{min-height:96svh}
+.eyebrow{color:#a56b7e;letter-spacing:3px;font-size:11px}
+.hero h1{color:#704654;text-shadow:0 3px 0 #fff,0 8px 28px #d9a0b044;animation:softGlow 4s ease-in-out infinite alternate}
+.hero h1 span{color:#c66b8a;text-shadow:none;letter-spacing:5px}
+@keyframes softGlow{to{text-shadow:0 3px 0 #fff,0 8px 34px #d9a0b066}}
+.subtitle{color:#775c64;text-shadow:none}
+.pill{border:1px solid #e3b3c0;background:rgba(255,255,255,.76);color:#8e4c63;box-shadow:0 5px 18px #b8798a13;backdrop-filter:blur(10px)}
+.pill:hover{background:#fff;box-shadow:0 9px 25px #b8798a26;transform:translateY(-2px)}
+.hint{color:#9b7b84}
+.section{position:relative}
+.section h2{color:#a75372;text-shadow:0 2px 0 #fff}
+.section .intro{color:#856b72}
+.gift{filter:drop-shadow(0 10px 12px #a45e7025)}
+.gift .box{background:linear-gradient(135deg,#e9a4b8,#c86b89);box-shadow:inset 0 2px 5px #fff6}
+.gift .lid{background:linear-gradient(135deg,#f4c6d1,#df91a8)}
+.gift .ribbon{background:#f6dfb2}.gift .bow{color:#d2ad72}
+.cartoon{filter:drop-shadow(0 8px 10px #a7677420)}
+.head{background:linear-gradient(145deg,#ffdfc9,#eeb99b);border:1px solid #bd8b7a;box-shadow:inset -4px -3px 0 #d9a38d33}
+.hair{background:linear-gradient(135deg,#51352f,#241a20);border:1px solid #352328}
+.hair.girl{background:linear-gradient(135deg,#593a35,#211920)}
+.body{background:linear-gradient(135deg,#d88aa2,#b85d7c);border:1px solid #a15a70;box-shadow:inset 0 5px 10px #fff3}
+.body.blue{background:linear-gradient(135deg,#8ea8cc,#547ba7);border-color:#526d91}
+.arm{background:linear-gradient(90deg,#f3c6aa,#e6ac8f);border:1px solid #c58e78}
+.heart-between{filter:drop-shadow(0 4px 7px #d36e902a)}
+.letter-card{background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(255,247,245,.96));color:#59424a;border:1px solid #f0cbd3;box-shadow:0 18px 55px #9e68741c;line-height:1.95}
+.letter-card strong{color:#ae4d70}.letter-card .signature{color:#a75372}
+.env-back{background:#f0c2cf;box-shadow:0 12px 24px #a568741f}
+.env-flap{background:#e8a6b9}
+.env-front{background:linear-gradient(145deg,#ffe5e9,#f7cdd7)}
+.seal{background:#b65a78;box-shadow:0 3px 9px #9e245b22}
+.surprise{background:rgba(255,255,255,.72);border:1px solid #e8bac7;color:#75545e;box-shadow:0 14px 40px #a56c7918;backdrop-filter:blur(12px)}
+.surprise .big{color:#ae5473}.footer{color:#a18189}
+.musicbar{background:rgba(255,252,250,.92);border:1px solid #e7c4cd;box-shadow:0 7px 28px #94626e20;backdrop-filter:blur(18px)}
+.musicbar button{background:linear-gradient(145deg,#e7a2b7,#cb6f8e);color:white;box-shadow:0 3px 8px #a85d7729}
+.musicbar span{color:#805966}.progress{background:#f0dce1}.progress i{background:#c66d8a}
+
+/* Balanced blush theme */
+:root{--pink:#c75d82;--rose:#a83f67;--cream:#4b303a;--night:#f7e9e8;--gold:#b9894d}
+body{color:#452d36;background:radial-gradient(ellipse at 12% 5%,#fff8f4 0,rgba(255,239,234,.96) 26%,transparent 58%),radial-gradient(ellipse at 88% 14%,#f2cbd4 0,transparent 42%),linear-gradient(155deg,#f8e9e4 0%,#f1dce0 48%,#ead3d9 100%);background-attachment:fixed}
+body:before{opacity:.18;background-image:radial-gradient(#9e6d79 .7px,transparent .7px)}
+.hero h1{color:#593444;text-shadow:0 2px 0 #fff8f5,0 7px 24px #b96d8740}
+.hero h1 span{color:#a83f67}
+.eyebrow{color:#805063}.subtitle{color:#563d47}.hint{color:#76525f}
+.pill{border:1px solid #c98b9e;background:rgba(255,249,246,.92);color:#74384f;box-shadow:0 5px 16px #8e53651c}
+.pill:hover{background:#fff8f5;box-shadow:0 8px 22px #8e53652b}
+.section h2{color:#8f3f5d;text-shadow:0 1px 0 #fff8f5}
+.section .intro{color:#604650}
+.gift-message{color:#563744}
+.letter-card{background:linear-gradient(145deg,rgba(255,250,247,.98),rgba(246,225,229,.98));color:#49313b;border-color:#dcaab8;box-shadow:0 18px 50px #75455422}
+.letter-card strong{color:#9d345b}.letter-card .signature{color:#8f3f5d}
+.surprise{background:rgba(255,247,244,.91);border:1px solid #d4a0af;color:#513743;box-shadow:0 14px 38px #75455420}
+.surprise .big{color:#943e5d}.footer{color:#76535e}
+.musicbar{background:rgba(250,237,235,.97);border:1px solid #c996a5;box-shadow:0 7px 24px #7545542b}
+.musicbar button{background:linear-gradient(145deg,#c66b89,#a84468);color:#fff}
+.musicbar span{color:#583744}.progress{background:#d9bdc4}.progress i{background:#a84468}
+
+/* Balanced romantic palette + clearer typography */
+:root{--pink:#d77b98;--rose:#a94367;--cream:#f9edf0;--gold:#d5ad70}
+body{color:#4d3540;background:radial-gradient(ellipse at 12% 4%,#f8e9e8 0%,transparent 42%),radial-gradient(ellipse at 90% 15%,#dcb9c6 0%,transparent 40%),linear-gradient(145deg,#ead8d9 0%,#f4e6e3 45%,#d9c1cb 100%);font-family:'Trebuchet MS','Segoe UI',sans-serif}
+.hero h1,.section h2,.surprise .big{font-family:'Palatino Linotype','Book Antiqua',Georgia,serif;letter-spacing:.3px}
+.hero h1{color:#684452;text-shadow:0 2px 0 #fff8,0 7px 24px #a95b782b}
+.hero h1 span{color:#a94367;letter-spacing:4px}
+.eyebrow{color:#89576b}.subtitle{color:#624b54}
+.section h2{color:#93445f;text-shadow:0 1px 0 #fff9}
+.section .intro{color:#66505a}
+.pill{color:#633b4c;background:linear-gradient(135deg,#fff7f4,#f1d8df);border:1px solid #c98b9f;box-shadow:0 5px 15px #71415420;font-weight:600}
+.pill:hover{background:#fff1f3;box-shadow:0 8px 20px #71415430}
+.gift-message,.hint{color:#74515f}
+.letter-card{background:linear-gradient(145deg,#fffaf7f7,#f4dfe5f5);color:#49313a;border-color:#d9a5b5}
+.letter-card strong{color:#9e3c61}
+.surprise{background:#f7e8e9e8;color:#563d47;border-color:#c98b9f;box-shadow:0 12px 35px #79505d22}
+.surprise .big{color:#963f60}.footer{color:#755b65}
+.musicbar{background:#f7e8e9f2;border-color:#c98b9f;box-shadow:0 5px 22px #60404c24}
+.musicbar span{color:#593c49}.musicbar button{background:#c96d8c;color:#fff}
+.progress{background:#d8b5c0}.progress i{background:#9f4565}
+
+/* Candle animation */
+.candle-stage{display:flex;justify-content:center;align-items:flex-end;gap:13px;height:66px;margin:-2px auto 0;position:relative;width:190px}
+.real-candle{position:relative;width:15px;height:43px;border-radius:5px 5px 3px 3px;background:repeating-linear-gradient(135deg,#fff1c9 0 5px,#e6a7b8 5px 9px);box-shadow:inset -3px 0 3px #9e617022,0 3px 4px #74435020;transform-origin:bottom;transition:transform .45s}
+.real-candle:nth-child(2){height:52px}
+.real-candle:nth-child(3){height:39px}
+.real-candle:before{content:'';position:absolute;top:-5px;left:6px;width:3px;height:7px;background:#65414a;border-radius:2px}
+.flame{position:absolute;left:2px;top:-23px;width:11px;height:19px;border-radius:55% 55% 55% 0;transform:rotate(45deg);background:radial-gradient(ellipse at 35% 65%,#fff9c8 0 18%,#ffc75e 34%,#f58a48 68%,#ed6c60 100%);filter:drop-shadow(0 0 5px #ffb14b);animation:flameDance .55s ease-in-out infinite alternate;transition:opacity .3s,transform .35s}
+@keyframes flameDance{to{transform:rotate(38deg) scale(.88) translateY(1px)}}
+.smoke{position:absolute;left:4px;top:-20px;width:8px;height:8px;border-radius:50%;background:#9d8b91;opacity:0;filter:blur(2px);pointer-events:none}
+.candles-blown .flame{opacity:0;transform:translate(14px,-8px) rotate(85deg) scale(.25);animation:none}
+.candles-blown .real-candle{transform:rotate(3deg)}
+.candles-blown .smoke{animation:smokeRise 1.8s ease-out forwards}
+@keyframes smokeRise{0%{opacity:0;transform:translate(0,0) scale(.5)}18%{opacity:.55}100%{opacity:0;transform:translate(8px,-40px) scale(2.2)}}
+.candle-stage.gust:after{content:'〰';position:absolute;left:16%;top:-15px;color:#9c8790;font-size:25px;opacity:0;animation:blowGust .65s ease-out}
+@keyframes blowGust{20%{opacity:.8;transform:translateX(15px)}100%{opacity:0;transform:translateX(85px)}}
+@media(max-width:500px){.candle-stage{gap:11px}.hero h1 span{letter-spacing:2px}}
+
+/* Welcome screen */
+#welcome-screen{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:22px;
+  background:linear-gradient(145deg,#ead8d9,#f8e9e4,#d9c1cb);
+  transition:opacity .6s ease,visibility .6s ease;
+}
+#welcome-screen.hidden{
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+}
+.welcome-card{
+  width:min(430px,100%);
+  padding:38px 25px;
+  text-align:center;
+  border:1px solid #d9a5b5;
+  border-radius:25px;
+  background:rgba(255,250,247,.94);
+  box-shadow:0 20px 60px #75455430;
+  color:#563744;
+}
+.welcome-heart{
+  font-size:48px;
+  display:block;
+  margin-bottom:15px;
+  animation:beat 1.2s infinite;
+}
+.welcome-title{
+  font-family:'Palatino Linotype',Georgia,serif;
+  font-size:30px;
+  color:#943f60;
+  line-height:1.3;
+}
+.welcome-card p{
+  font-size:15px;
+  line-height:1.8;
+  color:#74515f;
+}
+#welcome-open{
+  border:0;
+  border-radius:999px;
+  padding:14px 22px;
+  margin-top:12px;
+  background:linear-gradient(135deg,#c96d8c,#a84468);
+  color:white;
+  font-size:15px;
+  font-weight:bold;
+  cursor:pointer;
+  box-shadow:0 7px 20px #a85d7735;
+}
+#welcome-note{
+  margin-top:15px;
+  font:12px Arial,sans-serif;
+  color:#9b7180;
+}
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    scroll-behavior:auto!important
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Welcome screen -->
+<div id="welcome-screen">
+  <div class="welcome-card">
+    <span class="welcome-heart">💗</span>
+    <div class="welcome-title">
+      A Little Surprise<br>For You, Love
+    </div>
+    <p>
+      Meri jaan, tumhare liye kuch chhota sa banaya hai.
+      Isse kholne se pehle bas ek baar dil se muskura dena. 🥹❤️
+    </p>
+    <button id="welcome-open" type="button">
+      Tap to Open Your Surprise 💗
+    </button>
+    <div id="welcome-note">
+      A little music and lots of love, just for you.
+    </div>
+  </div>
+</div>
+
+<div class="stars" id="stars"></div>
+<div class="hearts" id="hearts"></div>
+
+<main>
+
+<section class="hero">
+  <div class="eyebrow">A little world made just for you</div>
+  <h1>Happy Birthday My Love<span>♡ 31 OCTOBER ♡</span></h1>
+  <p class="subtitle">
+    Aaj ka din sirf tumhara hai, meri jaan. Door hoon, par dil se tumhare liye dher saara pyaar, duaayein aur ek chhota sa surprise bhej raha hoon. ❤️‍🩹
+  </p>
+  <div>
+    <button class="pill" onclick="document.querySelector('#surprise-section').scrollIntoView({behavior:'smooth'})">Tumhare liye ek surprise 🎁</button>
+  </div>
+  <div style="margin-top:28px;font-size:26px;letter-spacing:9px;color:#ffb2cb">♡ ✧ ♡ ✧ ♡</div>
+</section>
+
+<section class="section" id="surprise-section">
+  <h2>Ek chhota sa gift, sirf tumhare liye 🎁</h2>
+  <p class="intro">Is gift ko tap karo.</p>
+
+  <div class="gift-wrap">
+    <button class="gift" id="gift" aria-label="Open gift" onclick="openGift()">
+      <span class="box"></span>
+      <span class="ribbon"></span>
+
+      <!-- Teddy holding a rose -->
+      <span class="gift-teddy" aria-hidden="true">
+        🧸
+        <span class="teddy-rose">🌹</span>
+      </span>
+
+      <span class="lid"></span>
+      <span class="bow">∞</span>
+    </button>
+  </div>
+
+  <div class="gift-message" id="gift-message">Tumhari smile meri favourite cheezon mein se ek hai. ❤️</div>
+
+  <!-- Cartoon couple with labels -->
+  <div class="cartoon" aria-label="Cute cartoon couple">
+
+    <!-- Boy: Mein -->
+    <div class="person-wrap">
+      <div class="person">
+        <div class="hair"></div>
+        <div class="head">
+          <i class="eye one"></i>
+          <i class="eye two"></i>
+          <i class="smile"></i>
+        </div>
+        <div class="body blue"></div>
+        <div class="arm"></div>
+        <div class="arm right"></div>
+        <div class="legs"></div>
+        <div class="legs r"></div>
+      </div>
+      <span class="person-label">(mein)</span>
+    </div>
+
+    <div class="heart-between">💗</div>
+
+    <!-- Girl: Tum -->
+    <div class="person-wrap">
+      <div class="person">
+        <div class="hair girl"></div>
+        <div class="head">
+          <i class="eye one"></i>
+          <i class="eye two"></i>
+          <i class="smile"></i>
+        </div>
+        <div class="body"></div>
+        <div class="arm"></div>
+        <div class="arm right"></div>
+        <div class="legs"></div>
+        <div class="legs r"></div>
+      </div>
+      <span class="person-label">(tum)</span>
+    </div>
+
+  </div>
+
+  <p class="intro">Do chhote cartoon, ek bada sa khwaab — kabhi ek hi jagah baithkar cake kaatne ka. 🥹</p>
+</section>
+
+<section class="section">
+  <h2>Tumhare naam ek khat 💌</h2>
+  <p class="intro">Is envelope ko kholo. Andar mere dil ki baatein hain — bina kisi pressure ke, bas sachche pyaar se.</p>
+  <button class="envelope" id="envelope" onclick="openLetter()" aria-label="Open love letter">
+    <span class="env-back"></span><span class="env-flap"></span><span class="env-front"></span><span class="seal">❤</span>
+  </button>
+  <button class="pill" onclick="openLetter()">Open your letter 💌</button>
+
+  <article class="letter-card" id="letter">
+    <p><strong>Happy Birthday, My Wife! 🥹❤️🎂🫂</strong></p>
+    <p>Jaan, aaj 31 October hai… woh din jis din is duniya mein woh insaan aaya, jo aaj mere liye poori duniya se alag maayne rakhta hai. ❤️‍🩹</p>
+    <p>Pata hai, main jab sochta hoon ki tumhara birthday hai, toh dil mein ek ajeeb si khushi hoti hai. Mann karta hai ki aaj ka din tumhare liye duniya ka sabse khoobsurat din bana doon. Tumhari har chhoti khwahish poori kar doon, tumhare chehre par poore din muskurahat rakhoon aur tumhe itna pyaar doon ki tumhe kabhi ek pal ke liye bhi apni ahmiyat par shak na ho.</p>
+    <p>Lekin jaan, ek baat hai jo mere dil ko thoda udaas kar deti hai…</p>
+    <p><strong>Aaj tumhara birthday hai, aur main tumse itni door hoon ki tumhare saamne khade hokar tumhe gale bhi nahi laga sakta. 🥺❤️‍🩹</strong></p>
+    <p>Kaash main aaj tumhare paas hota. Kaash tumhare liye apne haathon se cake laata, tumhare saamne khada hokar tumhe wish karta aur jab tum muskurati, toh bas tumhe dekhta rehta.</p>
+    <p>Kaash tum cake kaatne ke baad meri taraf dekhti, toh mujhe phone ki screen ke us paar nahi, balki apne saamne paati.</p>
+    <p>Aur phir main tumse kehta…</p>
+    <p><em>“Happy Birthday, meri jaan! ❤️ Aaj ka din tumhara hai, lekin meri zindagi mein tumhara hona mere liye har din ko khaas bana deta hai.”</em></p>
+    <p>Lekin koi baat nahi, meri jaan. Aaj main tumhare paas nahi hoon, par mere dil mein tumhare liye jo jagah hai, woh kisi doori se kam nahi ho sakti.</p>
+    <p>Aaj mere paas tumhare liye lafz hain, duaayein hain aur ek aisa khwaab hai jise main apni aankhon se sach hote dekhna chahta hoon.</p>
+    <p><strong>Main chahta hoon ki tumhara aaj khoobsurat ho, tumhara kal usse bhi zyada khoobsurat ho aur tumhari aane wali zindagi mein mujhe tumhara humsafar banne ka mauka mile. ❤️🫂</strong></p>
+    <p>Jaan, kabhi-kabhi main hamare future ke baare mein sochta hoon toh khud hi muskura deta hoon.</p>
+    <p>Sochta hoon, ek din aisa bhi aayega jab tumhara birthday hoga aur mujhe tumhe wish karne ke liye phone ka intezaar nahi karna padega. Main tumhare paas hounga. Tum mere saamne hogi. Main tumhe apne haathon se gift doonga aur tumhare chehre par aane wali khushi ko apni aankhon se dekhunga.</p>
+    <p>Shayad tum mujhe chhedte hue kahogi, “Achha ji, mere liye kya laaye ho?”</p>
+    <p>Aur main muskura kar kahunga, “Gift toh chhota sa hai, meri jaan… lekin tumhare saath poori zindagi bitane ka khwaab bahut bada hai.” 🥹❤️</p>
+    <p>Phir main tumhara haath pakadkar tumhe bataunga ki jab tum mujhse door thi, tab bhi maine tumhare saath kitne sapne dekhe the.</p>
+    <p>Kitni baar tumhari yaad aayi thi. Kitni baar tumse milne ka mann kiya tha. Kitni baar socha tha ki kaash tum abhi mere saamne hoti.</p>
+    <p>Aur aaj tumhe wish karte hue mere dil mein bas ek hi khwahish hai…</p>
+    <p><strong>Kaash hamare beech ki ye dooriyan ek din khatam ho jaayein aur main tumhe sirf apni mohabbat ke lafzon se nahi, apne saath se bhi khush rakh sakun. ❤️‍🩹🫂</strong></p>
+    <p>Meri jaan, tum mere liye sirf meri girlfriend nahi ho. Main tumhe apni hone wali biwi maanta hoon.</p>
+    <p>Aur jab main tumhe apni biwi ke roop mein sochta hoon na, toh mere khwaab sirf shaadi tak nahi rukte.</p>
+    <p>Main tumhare saath woh aam si zindagi jeena chahta hoon jismein har din koi special occasion na ho, lekin tumhara mere paas hona hi mere liye special ho.</p>
+    <p>Main tumhare saath subah ki chai peena chahta hoon. Tumhari chhoti-chhoti baatein sunna chahta hoon. Tumse kabhi bekaar ki nok-jhonk karna chahta hoon aur phir tumhe manaana chahta hoon.</p>
+    <p>Main tumhare saath woh din bhi jeena chahta hoon jab hum dono thake hue hon, jab paise aur zimmedariyon ki fikr ho, jab zindagi hamare hisaab se na chal rahi ho.</p>
+    <p>Kyunki jaan, mujhe tumhare saath sirf khoobsurat tasveeron wala pyaar nahi chahiye.</p>
+    <p><strong>Mujhe tumhare saath woh sachcha rishta chahiye jahan hum ek-doosre ki khushiyon mein khush hon, mushkil waqt mein ek-doosre ko samjhein aur har din ek-doosre ko chunne ki koshish karein. ❤️</strong></p>
+    <p>Main tumhe apni zindagi ka hissa banana chahta hoon, tumhari poori duniya nahi. Main chahta hoon ki tum apne sapne poore karo, apni pehchaan banao aur apni zindagi mein aage badho.</p>
+    <p>Aur agar tumhare dil mein bhi mere liye wahi jagah ho, toh main chahta hoon ki hum dono milkar apne us future ki taraf badhein jiska sapna humne dekha hai.</p>
+    <p>Jaan, tumhare birthday par main tumhare liye bahut saari khushiyan maangta hoon.</p>
+    <p>Tum kabhi apni muskurahat khona mat. Tumhare sapne kabhi tumse door na hon. Tumhe zindagi mein aise log milte rahein jo tumhari izzat karein, tumhe samjhein aur tumhari kadar karein.</p>
+    <p>Aur jab kabhi tum thak jao, jab kabhi tumhe lage ki sab kuch mushkil ho raha hai, toh meri khwahish hai ki tum mujhse apne dil ki baat keh sako.</p>
+    <p>Main har samasya ka jawaab dene ka vaada nahi kar sakta, lekin tumhari baat sunne, tumhe samajhne aur tumhare saath milkar raasta dhoondhne ki koshish zaroor karna chahta hoon.</p>
+    <p><strong>Kyunki mere liye tumse pyaar karna sirf tumhe paane ki khwahish nahi hai, balki tumhari khushi, tumhari izzat aur tumhare sukoon ki fikr karna bhi hai. 🫂❤️‍🩹</strong></p>
+    <p>Aur ab ek baat apne dil se tumhare dil tak kehna chahta hoon…</p>
+    <p>Kabhi tum sochna ki is duniya mein ek insaan hai jo tumhare saath apne aane wale kal ke sapne dekhta hai.</p>
+    <p>Ek insaan jo tumhare saath sirf tumhare birthday par nahi, balki zindagi ke un aam dino mein bhi khush rehna chahta hai jinhe duniya khaas nahi samajhti.</p>
+    <p>Ek insaan jo tumhare saath budha hone ke sapne dekhta hai, jo chahta hai ki saalon baad bhi tum dono ek-doosre ko dekhkar muskura sako aur keh sako ki achha hua humne ek-doosre ka saath chuna.</p>
+    <p>Aur woh insaan, jaan, main banna chahta hoon. 🥹❤️</p>
+    <p>Main nahi jaanta ki hamari zindagi mein aage kya likha hai. Lekin main chahta hoon ki hum apne rishte ko pyaar, bharose, sachchai aur samajh se itna mazboot banaayein ki har mushkil ka saamna ek team ki tarah kar sakein.</p>
+    <p>Main tumse bade-bade vaade karke tumhe apne pyaar ka yakeen nahi dilaana chahta.</p>
+    <p>Main chahta hoon ki ek din tum khud hamare saath ko dekhkar mehsoos karo ki jis insaan ko tumne apni zindagi mein jagah di, woh tumhari feelings ki kadar karta hai aur tumhare saath apna future banaane ke liye sach mein mehnat karta hai.</p>
+    <p><strong>Meri jaan, main tumhe aaj bhi utni hi sachchai se chahta hoon jitni sachchai se tumhare saath apna kal jeene ka khwaab dekhta hoon. ❤️‍🩹</strong></p>
+    <p>Aur aaj, tumhare birthday par, main tumhe bas ek baat yaad dilaana chahta hoon…</p>
+    <p>Tumhari zindagi bahut khoobsurat ho. Tum apne sapne poore karo. Tum khoob hanso, khoob muskurao aur hamesha apni kadar karna.</p>
+    <p>Aur agar waqt ne humein ek-doosre ka humsafar banne ka mauka diya, toh main chahta hoon ki tumhari aane wali zindagi mein hum dono milkar aisi yaadein banaayein jinhe yaad karke hum saalon baad bhi muskura sakein.</p>
+    <p><strong>Happy Birthday, meri jaan. ❤️🎂</strong></p>
+    <p>Aaj tumhara birthday hai, lekin mere dil mein ek dua hamare liye bhi hai…</p>
+    <p><em>“Kaash ek din hamare beech ki dooriyan sirf ek purani yaad ban jaayein. Kaash main tumhare birthday par tumhe wish karne ke baad phone rakhkar tumhe miss na karun, balki tumhare paas baithkar tumhari muskurahat dekhta rahun. Aur kaash ek din tum mujhe sirf apna boyfriend nahi, balki apna humsafar kehkar bulao.” 🥹❤️🫂</em></p>
+    <p>I love you, meri jaan. ❤️‍🩹</p>
+    <p><strong>Tum meri aaj ki mohabbat ho, mere aane wale kal ka khwaab ho aur woh insaan ho jiske saath main apni zindagi ka safar tay karna chahta hoon.</strong></p>
+    <p><strong>Happy Birthday in advance, meri hone wali biwi. 🥹❤️🎂🧿</strong></p>
+    <p><em>Tumhara aaj khushiyon se bhara ho aur tumhara kal un saare khoobsurat sapnon se, jinhe tum apni aankhon mein sajaaye hue ho.</em></p>
+    <p><strong>Hamesha khush rehna, meri jaan. Tumhari muskurahat mere liye bahut maayne rakhti hai. ❤️🫂</strong></p>
+    <p class="signature">— Hamesha tumhari khushi chahne wala ❤️‍🩹</p>
+  </article>
+</section>
+
+<section class="section">
+  <h2>Birthday wish, meri jaan 🎂</h2>
+  <div class="cake" aria-label="Birthday cake">🎂</div>
+  <div class="candle-stage" id="candle-stage" aria-label="Three lit birthday candles">
+    <div class="real-candle"><i class="flame"></i><i class="smoke"></i></div>
+    <div class="real-candle"><i class="flame"></i><i class="smoke"></i></div>
+    <div class="real-candle"><i class="flame"></i><i class="smoke"></i></div>
+  </div>
+  <p class="intro">Ek wish maango, Mehak. Tumhare sapne, tumhari khushiyan aur tumhara sukoon hamesha roshan rahe. ✨</p>
+  <button class="pill" onclick="blowCandles(this)">Candles blow karo ✨</button>
+  <div id="candle-message" class="gift-message"></div>
+</section>
+
+<section class="section">
+  <h2>Ek aakhri baat… ❤️‍🩹</h2>
+  <p class="intro">Yeh surprise kholne ke liye neeche tap karo.</p>
+  <button class="pill" onclick="showSurprise()">Dil ki aakhri baat kholna 💗</button>
+  <div class="surprise" id="surprise">
+    <div class="big">Tumhari khushi sabse pehle. 🥹❤️</div>
+    <p>Mehak, main tumse apne dil ki baat kehna chahta tha, isliye yeh chhoti si duniya banayi. Main tumse pyaar karta hoon, aur saath hi tumhari khushi, tumhare sapnon aur tumhari marzi ki izzat bhi karta hoon.</p>
+    <p>Mujhe umeed hai ki hum apni feelings ek-doosre se khulkar keh sakein aur jo bhi future ho, use pyaar, sachchai aur samajh se milkar bana sakein. Tumhe kisi jawab ya vaade ka pressure nahi — bas aaj ke din tum dil se muskurao. ❤️</p>
+    <div class="big">Happy Birthday, Mehak! 🎂🫂💗</div>
+    <p>Kaash aaj tumhari saari favourite cheezein tumhare paas hon… aur tumhe yaad rahe ki tum apni jagah bahut khaas ho. 🧿</p>
+  </div>
+</section>
+
+<footer class="footer">Made with love, patience & a little bit of magic ♡ · 31 October</footer>
+</main>
+
+<div class="musicbar">
+  <button id="play" onclick="toggleMusic()" aria-label="Play music">▶</button>
+  <span id="music-label">Humsafar · starts at 00:47 🎵</span>
+  <div class="progress"><i id="progress"></i></div>
+  <audio id="song" src="song.mp3" preload="metadata"></audio>
+</div>
+
+<script>
+const stars=document.getElementById('stars');
+
+for(let i=0;i<95;i++){
+  let s=document.createElement('i');
+  s.className='star';
+  s.style.left=Math.random()*100+'%';
+  s.style.top=Math.random()*100+'%';
+  s.style.animationDelay=Math.random()*4+'s';
+  s.style.animationDuration=(2+Math.random()*4)+'s';
+  stars.appendChild(s);
+}
+
+const hearts=document.getElementById('hearts');
+
+function makeHeart(){
+  let h=document.createElement('span');
+  h.className='heart';
+  h.textContent=['❤️','💗','💖','♡','❤️‍🩹'][Math.floor(Math.random()*5)];
+  h.style.left=Math.random()*100+'%';
+  h.style.fontSize=(13+Math.random()*23)+'px';
+  h.style.animationDuration=(8+Math.random()*9)+'s';
+  hearts.appendChild(h);
+  setTimeout(()=>h.remove(),18000);
+}
+
+setInterval(makeHeart,550);
+
+const song=document.getElementById('song');
+const play=document.getElementById('play');
+let songStartedAtRequestedPoint=false;
+
+const welcomeScreen=document.getElementById('welcome-screen');
+const welcomeButton=document.getElementById('welcome-open');
+const welcomeNote=document.getElementById('welcome-note');
+
+async function startWelcomeMusic(){
+  try{
+    if(!songStartedAtRequestedPoint){
+      if(!Number.isFinite(song.duration)){
+        await new Promise((resolve,reject)=>{
+          song.addEventListener('loadedmetadata',resolve,{once:true});
+          song.addEventListener('error',reject,{once:true});
+          song.load();
+        });
+      }
+
+      song.currentTime=Math.min(47,Math.max(0,(song.duration||48)-1));
+      songStartedAtRequestedPoint=true;
+    }
+
+    await song.play();
+
+    play.textContent='Ⅱ';
+    document.getElementById('music-label').textContent=
+      'Humsafar · playing from 00:47 💗';
+
+    welcomeScreen.classList.add('hidden');
+
+  }catch(error){
+    welcomeNote.textContent=
+      'Music start nahi hua? Button dobara tap karo 💗';
+  }
+}
+
+// Page load par autoplay ki koshish
+window.addEventListener('load',()=>{
+  startWelcomeMusic();
+},{once:true});
+
+// Autoplay block hone par tap se music start hoga
+welcomeButton.addEventListener('click',()=>{
+  startWelcomeMusic();
+});
+
+// Existing music button
+async function toggleMusic(){
+  if(song.paused){
+    try{
+      if(!songStartedAtRequestedPoint){
+        if(!Number.isFinite(song.duration)){
+          await new Promise((resolve,reject)=>{
+            song.addEventListener('loadedmetadata',resolve,{once:true});
+            song.addEventListener('error',reject,{once:true});
+          });
+        }
+
+        song.currentTime=Math.min(47,Math.max(0,(song.duration||48)-1));
+        songStartedAtRequestedPoint=true;
+      }
+
+      await song.play();
+      play.textContent='Ⅱ';
+      document.getElementById('music-label').textContent=
+        'Humsafar · playing from 00:47 💗';
+
+    }catch(e){
+      document.getElementById('music-label').textContent=
+        'Song load nahi hua — song.mp3 same folder mein rakho 🎵';
+    }
+  }else{
+    song.pause();
+    play.textContent='▶';
+    document.getElementById('music-label').textContent='Humsafar · paused 🎵';
+  }
+}
+
+song.addEventListener('timeupdate',()=>{
+  if(song.duration){
+    document.getElementById('progress').style.width=
+      (song.currentTime/song.duration*100)+'%';
+  }
+});
+
+song.addEventListener('play',()=>play.textContent='Ⅱ');
+song.addEventListener('pause',()=>play.textContent='▶');
+
+song.addEventListener('ended',()=>{
+  songStartedAtRequestedPoint=false;
+  song.currentTime=47;
+});
+
+let gifted=false;
+
+function openGift(){
+  const gift=document.getElementById('gift');
+  const teddy=gift.querySelector('.gift-teddy');
+
+  gifted=!gifted;
+
+  gift.classList.toggle('open',gifted);
+
+  // Teddy animation ko har tap par restart karo
+  teddy.style.animation='none';
+  void teddy.offsetWidth;
+
+  if(gifted){
+    teddy.style.animation='';
+
+    document.getElementById('gift-message').textContent=
+      'Tumhare liye ek cute sa teddy, jo hamesha tumhe yaad dilaye ki tum kitni pyaari ho. 🧸🌹❤️';
+
+    for(let i=0;i<12;i++){
+      setTimeout(makeHeart,i*90);
+    }
+
+  }else{
+    document.getElementById('gift-message').textContent=
+      'Tumhari smile meri favourite cheezon mein se ek hai. ❤️';
+  }
+}
+
+function openLetter(){
+  document.getElementById('envelope').classList.add('open');
+  const l=document.getElementById('letter');
+  l.classList.add('show');
+  setTimeout(()=>l.scrollIntoView({behavior:'smooth',block:'start'}),250);
+}
+
+function blowCandles(btn){
+  const stage=document.getElementById('candle-stage');
+
+  if(stage.classList.contains('candles-blown'))return;
+
+  stage.classList.add('gust');
+  setTimeout(()=>stage.classList.add('candles-blown'),180);
+  setTimeout(()=>stage.classList.remove('gust'),800);
+
+  if(btn){
+    btn.textContent='Candles blown out 💨';
+    btn.disabled=true;
+    btn.style.opacity='.78';
+  }
+
+  document.getElementById('candle-message').textContent=
+    'Meri jaan, meri dil se dua hai ki tum hamesha khush raho. Tumhari zindagi pyaar, sukoon aur khoobsurat lamhon se bhari rahe. Tumhare saare sapne poore hon, tum hamesha dil kholkar muskurao aur tumhe har mod par izzat, apnapan aur khushiyan milen. Jab bhi zindagi mushkil lage, tumhe himmat aur umeed milti rahe. Tumhari muskurahat hamesha salamat rahe, Mehak. Happy Birthday, meri jaan. ❤️🎂🫂';
+
+  for(let i=0;i<18;i++)setTimeout(makeHeart,i*80);
+}
+
+function showSurprise(){
+  document.getElementById('surprise').classList.add('show');
+
+  setTimeout(()=>{
+    document.getElementById('surprise').scrollIntoView({
+      behavior:'smooth',
+      block:'center'
+    });
+  },120);
+
+  for(let i=0;i<20;i++)setTimeout(makeHeart,i*100);
+}
+</script>
+
+</body>
+</html>
